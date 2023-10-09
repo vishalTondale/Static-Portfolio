@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my_portfolio</title>
+
+    <style>
+        body  {
+            background-image: url(ninja.jpg);
+            background-position: center;
+            background-size:cover;
+            width: 1460px;
+        }
+        nav {
+            background-color: aquamarine;
+            margin-top: 50px;
+            font-size: 30px;
+            height: 50px;
+            text-align: center;
+            padding-right: 50px;
+        }
+        #pf {
+            margin-top: 2px;
+            margin-right: 700px;
+        }
+        img {
+            height: 40px;
+            width: 40px;
+            background-color: #f6faf7;
+            border-radius: 25px;
+        }
+        a{
+            padding-top: -5px;
+            padding-right: 15px;
+            padding-left: 15px;
+            border-bottom: 5px solid green;
+            border-top: 3px solid aquamarine;
+            border-radius: 50%;
+            text-decoration: none;
+            color: #4285f4;
+            background-color: rgb(251, 249, 249);
+            animation-name: ani;
+        }
+        .b{
+            text-align: center;
+            margin-top: 200px;
+        }
+        h1 {
+            font-size: 50px;
+            text-align:center;
+
+        }
+        h2 {
+            text-align: center;
+        }
+        #gs {
+            font-size: 30px;
+            text-align: center;
+            background-color: aliceblue;
+            color: black;
+
+        }
+        .span {
+            font-family: "Google Sans", Roboto, Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            margin-left: 5px;
+        }
+        footer {
+            background-color: grey;
+            margin-top: 400px;
+            border: 2px solid red;
+            height: 150px;
+        }
+        #foot {
+            margin-top: -20px;
+            border: 2px solid black;
+            display: flex;
+            gap: 100px;
+        }
+        input{
+            height: 40px;
+            margin: 5px;
+            margin-left: 20px;
+            border: 2px solid red;
+            width: 150px;
+            border-radius: 25px;
+            text-align: center;
+            
+        }
+        .connect{
+            height: 40px;
+            width: 40px;
+            background-color: #f6faf7;
+            border-radius: 25px;
+            border: none;
+        }
+        .logo{
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+        footer h2 {
+            margin-top: 4px;
+            color: rgb(251, 250, 250);
+        }
+        #submit {
+            height: 40px;
+            margin: 10px;
+            margin-left: 10px;
+            border: 2px solid red;
+            width: 150px;
+            border-radius: 25px;
+        }
+        img:hover,.connect:hover{
+            background-color: #f338ca;
+            border-radius: 25px;
+        }
+        #submit:hover{
+            cursor:pointer;
+            background-color: #04f540;
+        }
+        ::placeholder {
+            color: red;
+            opacity: 0.7;
+        }
+        a:hover{
+            background-color: black;
+            color: white;
+        }
+        #gs:hover{
+            background-color: #f338ca;
+        }
+
+        @keyframes ani {
+            from { border-bottom: 5px solid green;
+                border-top: 3px solid aquamarine;
+                border-radius: 50%;
+                color: #4285f4;
+                background-color: rgb(251, 249, 249); }
+            to { background-color: black;
+                color: white; }
+    
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <img src="portfolio.png" alt="img" id="pf">
+            <a href="aboutMe.html">About me</a>
+            <a href="education.html">Education</a>
+            <a href="projects.html">Project</a>
+            <a href="#foot">Contact me</a>
+        </div>
+    </nav>
+        
+    <div class="b">
+        <h1>WELCOME TO MY</h1>
+        <h1 id="span">
+            <span style="color: #4285f4;">P</span>
+            <span style="color: gold;">O</span>
+            <span style="color: rgb(237, 14, 14);">R</span>
+            <span style="color: rgb(62, 14, 237);">T</span>
+            <span style="color: rgb(241, 39, 211);">F</span>
+            <span style="color: gold;">O</span>
+            <span style="color: #0beb3b;">L</span>
+            <span style="color: rgb(243, 10, 10);">I</span>
+            <span style="color: gold;">O</span>
+        </h1>
+
+        <a href="aboutMe.html" id="gs">Get Started</a>
+    </div>
+
+
+    <footer>
+        <h2>CONNECT WITH ME </h2>
+            <form action="" id="foot">
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                    <input type="text" name="mobile" id="mobile" placeholder="Mail / Mobile">
+                    <input type="text" name="msg" id="msg" placeholder="Enter your message here">
+                    <button type="submit" id="submit">SEND MESSAGE</button>
+            <div class="logo">
+                <a href="https://www.linkedin.com/in/vishal-tondale-aa285a20a/" class="connect"><img src="linkdin.png" alt="linkdin" ></a>
+                <a href="https://github.com/vishalTondale" class="connect"><img src="github.png" alt="github"></a>
+                <a href="https://www.instagram.com/sell_your_soul____/" class="connect"><img src="insta.png" alt="instagram"></a>
+                <a href="https://www.codingninjas.com/studio/profile/vishalTondale01" class="connect"><img src="codingNinja.png" alt="CodingNinjas"></a>
+            </div>
+        </form>
+    </footer>
+
+</body>
+</html>

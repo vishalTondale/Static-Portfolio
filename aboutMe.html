@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about_me</title>
+
+    <style>
+        body  {
+            background-image: url(ninja.jpg);
+            background-position: center;
+            background-size:cover;
+            width: 1460px;
+        }
+        nav {
+            background-color: aquamarine;
+            margin-top: 10px;
+            font-size: 30px;
+            height: 50px;
+            text-align: center;
+            padding-right: 50px;
+        }
+        #pf {
+            margin-top: 2px;
+            margin-right: 700px;
+        }
+        img {
+            height: 40px;
+            width: 40px;
+            background-color: #f6faf7;
+            border-radius: 25px;
+        }
+        a{
+            padding-top: -5px;
+            padding-right: 15px;
+            padding-left: 15px;
+            border-bottom: 5px solid green;
+            border-top: 3px solid aquamarine;
+            border-radius: 50%;
+            text-decoration: none;
+            color: #4285f4;
+            background-color: rgb(251, 249, 249);
+            animation-name: ani;
+        }
+        .b{
+            text-align: center;
+            margin-top: 110px;
+            margin-left: 150px;
+        }
+        h1 {
+            font-size: 50px;
+            text-align:center;
+
+        }
+        h2 {
+            text-align: center;
+        }
+        #gs {
+            font-size: 30px;
+            text-align: center;
+            background-color: aliceblue;
+            color: black;
+
+        }
+        footer {
+            background-color: grey;
+            margin-top: 400px;
+            border: 2px solid red;
+            height: 150px;
+        }
+        #foot {
+            margin-top: -20px;
+            border: 2px solid black;
+            display: flex;
+            gap: 100px;
+        }
+        input{
+            height: 40px;
+            margin: 5px;
+            margin-left: 20px;
+            border: 2px solid red;
+            width: 150px;
+            border-radius: 25px;
+            text-align: center;
+            
+        }
+        .connect{
+            height: 40px;
+            width: 40px;
+            background-color: #f6faf7;
+            border-radius: 25px;
+            border: none;
+        }
+        .logo{
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+        footer h2 {
+            margin-top: 4px;
+            color: rgb(251, 250, 250);
+        }
+        #submit {
+            height: 40px;
+            margin: 10px;
+            margin-left: 10px;
+            border: 2px solid red;
+            width: 150px;
+            border-radius: 25px;
+        }
+        img:hover,.connect:hover{
+            background-color: #f338ca;
+            border-radius: 25px;
+        }
+        #submit:hover{
+            cursor:pointer;
+            background-color: #04f540;
+        }
+        ::placeholder {
+            color: red;
+            opacity: 0.7;
+        }
+        a:hover{
+            background-color: black;
+            color: white;
+        }
+        #gs:hover{
+            background-color: #f338ca;
+        }
+        #my_img {
+            margin-top: -245px;
+            margin-left: 30px;
+            height: 400px;
+            width: 300px;
+        }
+        article{
+            padding: 10px;
+            margin-left: 30px;
+            margin-right: 300px;
+            margin-top: 30px;
+            background-color: #2b322d;
+            color: rgb(230, 232, 232);
+            opacity: 0.8;
+            text-align: justify;
+            border-radius: 25px;
+        }
+        .contact {
+            margin-left: 40px;
+        }
+
+        @keyframes ani {
+            from { border-bottom: 5px solid green;
+                border-top: 3px solid aquamarine;
+                border-radius: 50%;
+                color: #4285f4;
+                background-color: rgb(251, 249, 249); }
+            to { background-color: black;
+                color: white; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <img src="portfolio.png" alt="img" id="pf">
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="projects.html">Project</a>
+            <a href="#foot">Contact me</a>
+        </div>
+    </nav>
+        
+    <div class="b">
+        <span id="span" style="font-family: Roboto; font-size: 50px;margin-left: 150px;">
+            <span style="color: #4285f4;">P</span>
+            <span style="color: gold;">O</span>
+            <span style="color: rgb(237, 14, 14);">R</span>
+            <span style="color: rgb(62, 14, 237);">T</span>
+            <span style="color: rgb(241, 39, 211);">F</span>
+            <span style="color: gold;">O</span>
+            <span style="color: #0beb3b;">L</span>
+            <span style="color: rgb(243, 10, 10);">I</span>
+            <span style="color: gold;">O&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <br><br><br>
+            <span style="color: rgb(237, 14, 14);text-indent: 2px;">VISHAL</span>
+            &nbsp;&nbsp;
+            <span style="color: rgb(237, 14, 14);">TONDALE</span>
+        </span>
+    </div>
+
+    <img src="vishal.jpeg" alt="me" id="my_img"><br><br>
+    <div class="logo contact">
+        <a href="https://www.linkedin.com/in/vishal-tondale-aa285a20a/" class="connect"><img src="linkdin.png" alt="linkdin" ></a>
+        <a href="mailto:vishaltondale2000@gmail.com" class="connect"><img src="mail.png" alt="mail"></a>
+        <a href="tel:9067804781" class="connect"><img src="call.png" alt="call"></a>
+        <a href="https://www.google.com/maps/place/Pandharpur,+Maharashtra+413304/@17.6775172,75.2980038,14z/data=!3m1!4b1!4m6!3m5!1s0x3bc4181b8db52943:0x1ab147f5432da578!8m2!3d17.6805816!4d75.3155035!16zL20vMDV2N2Q3?entry=ttu" class="connect"><img src="location.png" alt="location"></a>
+    </div>
+
+
+
+    <article class="myself">
+        <h2>&#127775;&#127775; HELLO! NICE TO SEE YOU &#127775;&#127775;</h2>
+        <h3> &nbsp;&nbsp;&#9654;&nbsp; My name is Vishal and i am recent 2023 graduate with a strong background in Electrical Engineering. My real passion lies in both Automation (PLC and SCADA) and Information Technology (IT) .
+
+            Skilled in frontend development (HTML5 CSS JS Bootstrap), data analytics (Excel SQL Tableau Python) and web development. I am dedicated to creating user friendly websites and contributing to innovative projects. I'm eager to find a job in the IT sector where I can grow and contribute my skills.</h3>
+    </article>
+
+
+    <footer>
+        <h2>CONNECT WITH ME </h2>
+            <form action="" id="foot">
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                    <input type="text" name="mobile" id="mobile" placeholder="Mail / Mobile">
+                    <input type="text" name="msg" id="msg" placeholder="Enter your message here">
+                    <button type="submit" id="submit">SEND MESSAGE</button>
+            <div class="logo">
+                <a href="https://www.linkedin.com/in/vishal-tondale-aa285a20a/" class="connect"><img src="linkdin.png" alt="linkdin" ></a>
+                <a href="https://github.com/vishalTondale" class="connect"><img src="github.png" alt="github"></a>
+                <a href="https://www.instagram.com/sell_your_soul____/" class="connect"><img src="insta.png" alt="instagram"></a>
+                <a href="https://www.codingninjas.com/studio/profile/vishalTondale01" class="connect"><img src="codingNinja.png" alt="CodingNinjas"></a>
+            </div>
+        </form>
+    </footer>
+
+</body>
+</html>
