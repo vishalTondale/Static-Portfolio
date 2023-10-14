@@ -1,91 +1,262 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Contact Me</title>
+    <title>contact</title>
+
     <style>
-        
-body {
-	font-family: Arial, sans-serif;
-	background-color: #f7f7f7;
-}
+        body  {
+            background-position: center;
+            background: fixed;
+            background-size:cover;
+            background-color: white;
+            width: 1460px;
+        }
+        nav {
+           background-color: azure;
+            margin-top: 50px;
+            font-size: 30px;
+            height: 50px;
+            text-align: center;
+        }
+        .section1 {
+            display: flex;
+        }
+        #pf {
+            margin-top: 2px;
+            margin-right: 600px;
+        }
+        img {
+            height: 40px;
+            width: 40px;
+            background-color: #f6faf7;
+            border-radius: 25px;
+        }
+        a{
+            padding-top: -5px;
+            padding-right: 15px;
+            padding-left: 15px;
+            border-bottom: 5px solid green;
+            border-radius: 50%;
+            text-decoration: none;
+            color: #4285f4;
+            background-color: rgb(251, 249, 249);
+            animation-name: ani;
+        }
+        .b{
+            text-align: center;
+            margin-top: 100px;
+			background-color: aliceblue;
+        }
+        h1 {
+            font-size: 50px;
+            text-align:center;
 
-.container {
-	max-width: 600px;
-	margin: 0 auto;
-	padding: 50px 20px;
-}
+        }
+        h2 {
+            text-align: center;
+        }
+        #gs {
+            font-size: 30px;
+            text-align: center;
+            background-color: aliceblue;
+            color: black;
 
-.contact-form {
-	background-color: #fff;
-	border-radius: 5px;
-	padding: 30px;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
+        }
+        .span {
+            font-family: "Google Sans", Roboto, Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            margin-left: 5px;
+        }
+        footer {
+            background-color: grey;
+            margin-top: 400px;
+            border: 2px solid red;
+            height: 150px;
+        }
+        #foot {
+            margin-top: -20px;
+            border: 2px solid black;
+            display: flex;
+            gap: 100px;
+        }
+        .input{
+            height: 40px;
+            margin: 5px;
+            margin-left: 20px;
+            border: 2px solid red;
+            width: 150px;
+            border-radius: 25px;
+            text-align: center;
+            
+        }
+        .connect{
+            height: 40px;
+            width: 40px;
+            background-color: #f6faf7;
+            border-radius: 25px;
+            border: none;
+        }
+        .logo{
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+        footer h2 {
+            margin-top: 4px;
+            color: rgb(251, 250, 250);
+        }
+        #submit {
+            height: 40px;
+            margin: 10px;
+            margin-left: 10px;
+            border: 2px solid red;
+            width: 150px;
+            border-radius: 25px;
+        }
+        img:hover,.connect:hover{
+            background-color: #f338ca;
+            border-radius: 25px;
+        }
+        #submit:hover{
+            cursor:pointer;
+            background-color: #04f540;
+        }
+        ::placeholder {
+            color: red;
+            opacity: 0.7;
+        }
+        a:hover{
+            background-color: black;
+            color: white;
+        }
+        #gs:hover{
+            background-color: #f338ca;
+        }
 
-h1 {
-	font-size: 36px;
-	margin-bottom: 30px;
-	text-align: center;
-}
+        @keyframes ani {
+            from { border-bottom: 5px solid green;
+                border-top: 3px solid aquamarine;
+                border-radius: 50%;
+                color: #4285f4;
+                background-color: rgb(251, 249, 249); }
+            to { background-color: black;
+                color: white; }
+    
+        }
+        .gifimg {
+            margin-top: 150px;
+            height: 400px;
+            align-items:center ;
+            text-align: center;
+            width: 730px;
+        }
+        .gifimg1 {
+            margin-left: 200px;
+            margin-right: 200px;
+            background-color: white;
+            height: 400px;
+            width: 400px;
+            align-items:center ;
+            text-align: center;
 
-form {
-	display: flex;
-	flex-direction: column;
-}
-
-label {
-	font-size: 18px;
-	font-weight: bold;
-	margin-bottom: 10px;
-}
-
-input, textarea {
-	padding: 10px;
-	border-radius: 5px;
-	border: 0.5px solid rgb(245, 221, 221);
-	margin-bottom: 20px;
-}
-
-button {
-	background-color: #4CAF50;
-	color: #fff;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 5px;
-	font-size: 18px;
-	cursor: pointer;
-}
-
-button:hover {
-	background-color: #3e8e41;
-}
-a{
-    color: #fff;
-}
+        }
+		.contactDetails {
+			padding-left: 20px;
+			padding-right: 20px;
+			text-align: left;
+			width: 50vw;
+		}
+		.label1 {
+			height: 50px;
+			font-size: large;
+		}
+		#input2 {
+			height: 40px;
+			width: 100%;
+		}
+        .mapbox {
+            width: 100%;
+        }
+        iframe {
+            border: 2px solid black;
+        }
+        .form-btn {
+            background-color: #a3e4b3;
+        }
     </style>
 </head>
 <body>
-	<div class="container">
-		<div class="contact-form">
-			<h1>Contact Me</h1>
-			<form action="" method="post">
-				<label for="name">Name</label>
-				<input type="text" id="name" name="name" required>
+    <nav>
+        <div class="navbar">
+            <img src="portfolio.png" alt="img" id="pf">
+            <a href="aboutMe.html">About me</a>
+            <a href="education.html">Education</a>
+            <a href="projects.html">Project</a>
+            <a href="contact.html">Contact me</a>
+        </div>
+    </nav>
+    <br><br><br><br>
+    <section class="section1">
+		<div class="b">
+            <section class="mapbox">
+                <figure>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.581178334534!2d75.36054781541652!3d17.677264987994754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd6ff6bdeca2a3%3A0xfc0f8b6c8abac421!2sPandharpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1632567930846!5m2!1sen!2sin"
+                    width="600" height="300" loading="lazy"></iframe>
+                </figure>
+              </section>
+			<form onsubmit="return submitForm()" class="contactDetails b">
+				<label for="fullname" class="label1"><h3>Name</h3> </label>
+				<input type="text" name="fullname" class="form-input" placeholder="Full name" required id="input2">
 
-				<label for="email">Email</label>
-				<input type="email" id="email" name="email" required>
+				<label for="fullname" class="label1"><h3>Email/Mobile</h3> </label>
+				<input type="text" name="email" class="form-input" placeholder="Email/Mobile" required id="input2"><br>
 
-				<label for="message">Message</label>
-				<textarea id="message" name="message" required></textarea>
-
-				<button type="submit">Submit</button>
-                <p></p>
-
-                <button type="button" ><a href="index.html">Home Page</a></button>
+				<label for="fullname" class="label1"><h3>Email/Mobile</h3> </label>
+				<textarea name="message" class="form-input" placeholder="Your Message" required id="input2"></textarea><br>
+			
+				<button class="form-btn" type="submit" style="width: 50vw;"id="submit" style="background-color: #8ae8a1;">Send Message </button>
+		
 			</form>
-		</div>
-	</div>
+
+		
+		  
+        </div>
+        <div>
+            <br><br><br><br><br><br><br>
+            <h1 style="color: rgb(2, 2, 2); text-decoration:underline">Contact Me</h1>
+            <p class="gifimg">
+                <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1670664007515/7nRHqrTst.gif" alt="img" class="gifimg1">
+            </p>
+        </div>
+        
+    </section>
+
+
+
+    <footer>
+        <h2>CONNECT WITH ME </h2>
+            <form onsubmit="return submitForm()" id="foot">
+                    <input type="text" name="name" id="name" placeholder="Enter your name" class="input">
+                    <input type="text" name="mobile" id="mobile" placeholder="Mail / Mobile" class="input">
+                    <input type="text" name="msg" id="msg" placeholder="Enter your message here" class="input">
+                    <button type="submit" id="submit">SEND MESSAGE</button>
+            <div class="logo">
+                <a href="https://www.linkedin.com/in/vishal-tondale-aa285a20a/" class="connect" title="Linkedin"><img src="linkdin.png" alt="linkdin" ></a>
+                <a href="https://github.com/vishalTondale" class="connect" title="Github"><img src="github.png" alt="github"></a>
+                <a href="https://www.instagram.com/sell_your_soul____/" class="connect" title="Instagram"><img src="insta.png" alt="instagram"></a>
+                <a href="https://www.codingninjas.com/studio/profile/vishalTondale01" class="connect" title="Coding-Ninjas"><img src="codingNinja.png" alt="CodingNinjas"></a>
+            </div>
+        </form>
+    </footer>
+
+    <script>
+    function submitForm() {
+        alert('Thank you for contacting. your message submitted successfully!');
+        return false;
+      }
+    </script>
+
 </body>
 </html>
