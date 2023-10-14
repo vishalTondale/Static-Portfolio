@@ -198,7 +198,7 @@
 
     <footer>
         <h2>CONNECT WITH ME </h2>
-            <form action="" id="foot">
+            <form onsubmit="return submitForm()" id="foot">
                     <input type="text" name="name" id="name" placeholder="Enter your name">
                     <input type="text" name="mobile" id="mobile" placeholder="Mail / Mobile">
                     <input type="text" name="msg" id="msg" placeholder="Enter your message here">
@@ -211,6 +211,14 @@
             </div>
         </form>
     </footer>
+
+
+    <script>
+        function submitForm() {
+            alert('Thank you for contacting. your message submitted successfully!');
+            return false;
+          }
+        </script>
 
 </body>
 </html>
